@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="554.0" prefWidth="1050.0" style="-fx-background-color: linear-gradient(to right bottom, #05071F,#5ba5f0);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+    <VBox alignment="CENTER" layoutX="31.0" layoutY="27.0" prefHeight="500.0" prefWidth="386.0" spacing="20.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+      <ImageView fitHeight="89.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/jimmy-fallon.png" />
+         </image>
+      </ImageView>
+        <Label text="CNE:" textFill="#ebe9e9" GridPane.rowIndex="1">
+         <font>
+            <Font name="Bradley Hand ITC" size="21.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" prefHeight="40.0" prefWidth="386.0" />
+        <Label text="Password:" textFill="#f8f1f1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Bradley Hand ITC" size="24.0" />
+         </font></Label>
+        <PasswordField fx:id="passwordField" prefHeight="39.0" prefWidth="386.0" />
+        <HBox alignment="CENTER_RIGHT" spacing="10.0" />
+     <Button onAction="#loginButtonClicked" prefHeight="39.0" prefWidth="138.0" text="CONNEXION" />
+    </VBox>
+   <Label layoutX="757.0" layoutY="417.0" prefHeight="35.0" prefWidth="127.0" text="Realiser par : " textFill="#f5efef">
+      <font>
+         <Font name="Bradley Hand ITC" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="774.0" layoutY="452.0" prefHeight="39.0" prefWidth="110.0" text="Bouarga zakaria" textFill="#f5efef">
+      <font>
+         <Font name="Bradley Hand ITC" size="13.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="89.0" fitWidth="92.0" layoutX="927.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/zaki.jpg" />
+      </image>
+   </ImageView>
+   <Label layoutX="524.0" layoutY="135.0" prefHeight="172.0" prefWidth="454.0" text=" Gestion de master M2I" textFill="#f5f0f0">
+      <font>
+         <Font size="38.0" />
+      </font>
+   </Label>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

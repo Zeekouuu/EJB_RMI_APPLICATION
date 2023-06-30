@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="ConrdinateurController">
+    <AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+        <HBox  alignment="CENTER" layoutX="69.0" layoutY="92.0" spacing="10.0">
+            <Button text="AjouterEtudiant" onAction="#AjouterEtudiant" />
+            <Button text="Tous Mes Etudiants" onAction="#ConsulterEtudiant" />
+            <Button text="Editer Relever du notes" onAction="#ReleverDeNotes" />
+            <Button fx:id="BTN" text="Login" onAction="#login" />
+              <javafx.scene.control.Label fx:id="idLabel" text="" />
+
+            
+        </HBox>
+    </AnchorPane>
+</VBox>

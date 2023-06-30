@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: linear-gradient(to right bottom, #05071F,#5ba5f0);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleur.TelechargerCoursController">
+    <children>
+           <VBox alignment="CENTER" layoutX="175.0" layoutY="77.0" prefWidth="500.0" spacing="10.0">
+            <Label text="Sélectionnez un module:" textFill="#f2ebeb" />
+        <ComboBox fx:id="moduleComboBox" layoutX="20.0" layoutY="20.0" prefWidth="150.0" promptText="Sélectionner un module" />
+        <Label text="Sélectionnez l'enseignant:" textFill="#eee8e8" />
+        <ComboBox fx:id="etudiantComboBox" layoutX="20.0" layoutY="60.0" prefWidth="150.0" promptText="Sélectionner un étudiant" />
+        <Label text="Valeur de la cours:" textFill="#f2eded" />
+         <Button layoutX="20.0" layoutY="140.0" onAction="#afficher" text="Afficher Le cours" />
+        <TextField fx:id="noteTextField" editable="false" layoutX="20.0" layoutY="100.0" prefHeight="25.0" prefWidth="445.0">
+            <VBox.margin>
+               <Insets left="20.0" right="20.0" />
+            </VBox.margin></TextField>
+         <Label text="" />
+        <Button layoutX="20.0" layoutY="140.0" onAction="#afficher" text="Telecharger" />
+        <Button layoutX="90.0" layoutY="140.0" onAction="#retournerButtonAction" text="Retourner" />
+        <Label text="" />
+           </VBox>
+      <Label layoutX="272.0" layoutY="25.0" prefHeight="48.0" prefWidth="327.0" text="TELECHARGER LES COURS" textFill="#f8f6f6">
+         <font>
+            <Font name="Bradley Hand ITC" size="23.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </Label>
+    </children>
+</AnchorPane>

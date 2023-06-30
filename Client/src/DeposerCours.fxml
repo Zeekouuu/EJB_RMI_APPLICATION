@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: linear-gradient(to right bottom, #05071F,#5ba5f0);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeposerCoursController">
+    <children>
+        <Label layoutX="74.0" layoutY="218.0" text="Nom du module" textFill="#ebdcdc">
+         <font>
+            <Font name="Bradley Hand ITC" size="28.0" />
+         </font></Label>
+        <TextField fx:id="moduleField" layoutX="390.0" layoutY="223.0" prefHeight="34.0" prefWidth="228.0" />
+        <Button layoutX="367.0" layoutY="321.0" onAction="#importerCours" text="DEPOSER" />
+         <Button fx:id="BTN" layoutX="262.0" layoutY="321.0" onAction="#retour" prefHeight="25.0" prefWidth="66.0" text="Retour" />
+      <Label layoutX="225.0" layoutY="49.0" prefHeight="56.0" prefWidth="379.0" text="DEPOSER VOTRE COURS" textFill="#e8dfdf">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

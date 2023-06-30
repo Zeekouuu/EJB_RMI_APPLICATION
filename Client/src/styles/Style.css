@@ -1,0 +1,23 @@
+/* styles.css */
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.text-field {
+    -fx-pref-width: 200px;
+}
+
+.button {
+    -fx-pref-width: 100px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.button:pressed {
+    -fx-background-color: #367d39;
+}
